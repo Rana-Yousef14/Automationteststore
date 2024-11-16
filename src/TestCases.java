@@ -26,7 +26,7 @@ public class TestCases {
 		driver.get(theWebsite);
 	}
 
-	@Test(priority = 1, enabled = false)
+	@Test(priority = 1)
 	public void signUp() throws InterruptedException {
 		int randomIndexForTheFirstName = rand.nextInt(firstNames.length);
 		int randomIndexForTheLastName = rand.nextInt(lastNames.length);
@@ -75,7 +75,7 @@ public class TestCases {
 		continueButton.click();
 	}
 
-	@Test(priority = 2, enabled = false)
+	@Test(priority = 2)
 	public void logOut() throws InterruptedException {
 //		Thread.sleep(5000);
 //		String logOutUrl = "https://automationteststore.com/index.php?rt=account/logout";
@@ -89,7 +89,7 @@ public class TestCases {
 		logOutClick.click();
 	}
 
-	@Test(priority = 3, enabled = false)
+	@Test(priority = 3)
 	public void logIn() {
 		driver.findElement(By.linkText("Login or register")).click();
 		WebElement loginInput = driver.findElement(By.id("loginFrm_loginname"));
